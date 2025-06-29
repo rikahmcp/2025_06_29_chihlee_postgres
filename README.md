@@ -1,3 +1,5 @@
 # 2025_06_29_chihlee_postgres
 致理_postgres_星期日
 建立postgres
+
+這是第2次建立
