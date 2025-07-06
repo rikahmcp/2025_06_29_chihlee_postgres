@@ -33,3 +33,54 @@ VALUES ('呂育君', '歷史');
 INSERT INTO student (name, major)
 VALUES ('小柱', '生物'),('信忠', '英語');
 ```
+
+## 取得資料
+
+```sql
+SELECT
+  select_list
+FROM
+  table_name
+WHERE
+  condition
+ORDER BY
+  sort_expression;
+
+```
+## SELECT FROM WHERE ORDER BY語法
+
+```sql
+SELECT student_id, name, major
+FROM  student;
+
+SELECT  name, major
+FROM  student;
+
+SELECT  *
+FROM  student
+WHERE name='信忠';
+
+SELECT  *
+FROM  student
+ORDER BY student_id DESC;
+
+SELECT  *
+FROM  student
+ORDER BY student_id DESC
+LIMIT 3;
+```
+
+## UPDATE and DELETE 語法
+
+```sql
+UPDATE student
+SET name = '阿柱',
+    major = '數學'
+WHERE student_id = 2;
+
+DELETE FROM student
+WHERE student_id = 2;
+
+DELETE FROM student
+WHERE student_id in (1, 3, 4);
+```
