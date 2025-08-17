@@ -6,9 +6,6 @@ Here's our first attempt at using data to create a table:
 
 import streamlit as st
 import pandas as pd
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
 
-df
+st.title("台鐵車站資訊")
+st.header("2023年各站進出人數")
