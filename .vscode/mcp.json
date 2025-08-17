@@ -23,5 +23,13 @@
                 "postgresql://postgres:raspberry@host.docker.internal:5432/postgres"
             ]
         },
+        "render_postgres": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres",
+                "postgresql://chillee_sunday_n9w7_user:AmBiXb2qpTxIudoBg8oGoeKI0Zqo88By@dpg-d2bvn7be5dus738k9jvg-a.singapore-postgres.render.com/chillee_sunday_n9w7?sslmode=require"
+            ]
+        },
     },
 }
