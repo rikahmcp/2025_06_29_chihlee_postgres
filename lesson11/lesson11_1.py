@@ -47,6 +47,7 @@ if choose_date_range is None:
 
 
 def _to_date(v):
+  '''讓使用者自訂選取的日期區間'''
   if isinstance(v, date):
     return v
   if isinstance(v, datetime):
